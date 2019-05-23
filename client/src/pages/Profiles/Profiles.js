@@ -109,7 +109,7 @@ class Profiles extends Component {
                           <hr></hr>
                           {profile.description}
                           <hr></hr>
-                      <p className="text-center">  <img src={profile.picture} alt="Profile Image"></img> </p> 
+                      <p className="text-center">  <img src={profile.picture} alt="Profile Face"></img> </p> 
                         </strong>
                       </a>
                       <DeleteBtn onClick={() => this.deleteProfile(profile._id)} />
