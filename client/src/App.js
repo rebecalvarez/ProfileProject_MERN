@@ -1,30 +1,14 @@
-import React, { Component } from 'react';
-import AppNavbar from './components/AppNavbar';
-import Main from './components/Main';
-import CreateProfile from './components/CreateProfile';
-import { Container } from 'reactstrap';
-import { Provider } from 'react-redux';
-import store from './store';
+import React from "react";
+import Profiles from "./pages/Profiles";
+import Nav from "./components/Nav";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-
-/* ----------------- COMPONENT ------------------ */
-
-class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <div className="App">
-          <AppNavbar />
-          <Container>
-            <CreateProfile />
-            <Main />
-          </Container>
-        </div>
-      </Provider>
-    )
-  }
+function App() {
+  return (
+    <div>
+      <Nav />
+      <Profiles />
+    </div>
+  );
 }
 
 export default App;
