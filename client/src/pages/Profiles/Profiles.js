@@ -85,7 +85,9 @@ class Profiles extends Component {
                 onChange={this.handleInputChange}
                 name="picture"
                 placeholder="Please insert a URL of your picture (Optional)"
+        
               />
+              <p className="text-muted text-center">If you don't have an image, use this link: https://bit.ly/30CrcJz</p>
               <FormBtn
                 disabled={!(this.state.name && this.state.description)}
                 onClick={this.handleFormSubmit}
